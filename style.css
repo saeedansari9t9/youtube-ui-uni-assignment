@@ -1,13 +1,4 @@
-/* ==========================================================================
-   YouTube UI Clone - Lab Task Stylesheet
-   Technologies: Modern Vanilla CSS (Flexbox, CSS Grid, Custom Properties)
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   1. CSS Variables & Theme Tokens
-   -------------------------------------------------------------------------- */
 :root {
-  /* Colors */
   --bg-primary: #f9f9f9;
   --bg-header: #ffffff;
   --bg-sidebar: #ffffff;
@@ -19,22 +10,18 @@
   --border-color: #e0e0e0;
   --border-focus: #1c62b9;
   
-  /* Text Colors */
   --text-primary: #0f0f0f;
   --text-secondary: #606060;
   --text-chip-active: #ffffff;
   --yt-red: #ff0000;
   --yt-blue: #065fd4;
   
-  /* Typography */
   --font-main: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   
-  /* Layout Dimensions */
   --header-height: 56px;
   --sidebar-width: 240px;
   --sidebar-collapsed-width: 72px;
   
-  /* Effects */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
   --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -45,9 +32,6 @@
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* --------------------------------------------------------------------------
-   2. Global Reset & Base Setup
-   -------------------------------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -82,9 +66,6 @@ img {
   height: auto;
 }
 
-/* --------------------------------------------------------------------------
-   3. Header (Top Navigation Bar - Flexbox)
-   -------------------------------------------------------------------------- */
 .header {
   position: fixed;
   top: 0;
@@ -101,7 +82,6 @@ img {
   border-bottom: 1px solid var(--border-color);
 }
 
-/* Header Left: Menu & Logo */
 .header-left {
   display: flex;
   align-items: center;
@@ -138,7 +118,6 @@ img {
   object-fit: contain;
 }
 
-/* Header Center: Search Bar & Voice Search */
 .header-center {
   display: flex;
   align-items: center;
@@ -216,7 +195,6 @@ img {
   background-color: var(--bg-search);
 }
 
-/* Header Right: Profile & Actions */
 .header-right {
   display: flex;
   align-items: center;
@@ -243,16 +221,12 @@ img {
   border-color: var(--yt-blue);
 }
 
-/* --------------------------------------------------------------------------
-   4. Main Container & Fixed Sidebar (<nav>)
-   -------------------------------------------------------------------------- */
 .main-container {
   display: flex;
   margin-top: var(--header-height);
   min-height: calc(100vh - var(--header-height));
 }
 
-/* Fixed Sidebar */
 .sidebar {
   position: fixed;
   top: var(--header-height);
@@ -267,7 +241,6 @@ img {
   box-shadow: var(--shadow-sm);
 }
 
-/* Custom Scrollbar for Sidebar */
 .sidebar::-webkit-scrollbar {
   width: 6px;
 }
@@ -327,29 +300,25 @@ img {
   margin: 12px 0;
 }
 
-/* --------------------------------------------------------------------------
-   5. Content Area & Category Chips Bar
-   -------------------------------------------------------------------------- */
 .content-area {
   margin-left: var(--sidebar-width);
   flex: 1;
   padding: 16px 24px 40px;
   background-color: var(--bg-primary);
-  min-width: 0; /* Prevents overflow in flex child */
+  min-width: 0;
 }
 
-/* Horizontal Filter Chips */
 .chips-container {
   display: flex;
   gap: 10px;
   overflow-x: auto;
   padding-bottom: 16px;
   margin-bottom: 8px;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
 }
 
 .chips-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
+  display: none;
 }
 
 .chip {
@@ -372,16 +341,12 @@ img {
   color: var(--text-chip-active);
 }
 
-/* --------------------------------------------------------------------------
-   6. Video Grid Section (CSS Grid Layout)
-   -------------------------------------------------------------------------- */
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px 16px;
 }
 
-/* Video Card Styling */
 .video-card {
   background-color: var(--bg-card);
   border-radius: var(--radius-md);
@@ -394,7 +359,6 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-/* Video Card Hover Effects */
 .video-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
@@ -403,7 +367,7 @@ img {
 .thumbnail-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%;
   background-color: #e2e8f0;
   overflow: hidden;
 }
@@ -422,7 +386,6 @@ img {
   transform: scale(1.03);
 }
 
-/* Video Details Section */
 .video-details {
   display: flex;
   gap: 12px;
@@ -487,11 +450,6 @@ img {
   color: var(--text-secondary);
 }
 
-/* --------------------------------------------------------------------------
-   7. Responsive Design (Media Queries)
-   -------------------------------------------------------------------------- */
-
-/* Tablet Screens (max-width: 1024px) */
 @media (max-width: 1024px) {
   :root {
     --sidebar-width: var(--sidebar-collapsed-width);
@@ -518,7 +476,7 @@ img {
 
   .sidebar-divider,
   .sidebar .nav-list:last-of-type {
-    display: none; /* Hide secondary navigation in compact view */
+    display: none;
   }
 
   .content-area {
@@ -532,10 +490,9 @@ img {
   }
 }
 
-/* Mobile Devices (max-width: 768px) */
 @media (max-width: 768px) {
   .sidebar {
-    display: none; /* Hide desktop sidebar on small mobile */
+    display: none;
   }
 
   .content-area {
@@ -548,7 +505,7 @@ img {
   }
 
   .voice-btn {
-    display: none; /* Save space on small headers */
+    display: none;
   }
 
   .video-grid {
@@ -557,7 +514,6 @@ img {
   }
 }
 
-/* Small Mobile Phones (max-width: 500px) */
 @media (max-width: 500px) {
   .header {
     padding: 0 10px;
@@ -585,7 +541,7 @@ img {
   }
 
   .header-right .icon-btn {
-    display: none; /* Show only profile avatar */
+    display: none;
   }
 
   .content-area {
@@ -593,12 +549,12 @@ img {
   }
 
   .video-grid {
-    grid-template-columns: 1fr; /* Single column card feed */
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 
   .video-card {
-    border-radius: 0; /* YouTube mobile-style full width */
+    border-radius: 0;
     box-shadow: none;
     border-left: none;
     border-right: none;
