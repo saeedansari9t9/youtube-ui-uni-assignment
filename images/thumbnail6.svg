@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="foodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="60%" stop-color="#292524"/>
+      <stop offset="100%" stop-color="#44403c"/>
+    </linearGradient>
+    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#foodGrad)"/>
+
+  <!-- Plate graphic -->
+  <circle cx="480" cy="180" r="120" fill="#f8fafc" opacity="0.1"/>
+  <circle cx="480" cy="180" r="100" fill="#f8fafc" stroke="#e2e8f0" stroke-width="4"/>
+  <!-- Sunny side egg / avocado / bowl -->
+  <circle cx="480" cy="180" r="40" fill="#fef08a"/>
+  <circle cx="480" cy="180" r="24" fill="#f59e0b"/>
+  <path d="M 430 140 Q 480 110 530 140" stroke="#16a34a" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="440" cy="220" r="14" fill="#ef4444"/>
+  <circle cx="510" cy="210" r="12" fill="#ef4444"/>
+
+  <rect x="35" y="40" width="140" height="32" rx="6" fill="#10b981"/>
+  <text x="105" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="14" fill="#fff" text-anchor="middle">QUICK &amp; HEALTHY</text>
+
+  <text x="35" y="125" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="44" fill="#ffffff">5 HIGH-PROTEIN</text>
+  <text x="35" y="175" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="44" fill="url(#warmGrad)">BREAKFASTS</text>
+  <text x="35" y="215" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="22" fill="#d6d3d1">Under 10 Minutes Each!</text>
+
+  <rect x="35" y="250" width="150" height="32" rx="16" fill="#44403c"/>
+  <text x="110" y="272" font-family="sans-serif" font-weight="bold" font-size="13" fill="#fbbf24" text-anchor="middle">🥑 30g+ PROTEIN</text>
+
+  <rect x="560" y="320" width="65" height="26" rx="4" fill="#000000" opacity="0.85"/>
+  <text x="592" y="338" font-family="sans-serif" font-weight="bold" font-size="13" fill="#ffffff" text-anchor="middle">12:30</text>
+</svg>

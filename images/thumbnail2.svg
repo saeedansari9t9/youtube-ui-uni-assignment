@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="60%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg2)"/>
+  
+  <!-- Glowing AI / Robot Face silhouette / brain -->
+  <g transform="translate(410, 80)">
+    <circle cx="90" cy="90" r="90" fill="#22d3ee" opacity="0.15"/>
+    <circle cx="90" cy="90" r="60" fill="#818cf8" opacity="0.3"/>
+    <path d="M50 70 Q90 20 130 70 Q150 120 90 150 Q30 120 50 70 Z" fill="none" stroke="#22d3ee" stroke-width="4"/>
+    <circle cx="70" cy="85" r="8" fill="#38bdf8"/>
+    <circle cx="110" cy="85" r="8" fill="#38bdf8"/>
+    <path d="M75 120 Q90 130 105 120" stroke="#38bdf8" stroke-width="3" fill="none"/>
+    <!-- Circuit lines -->
+    <path d="M90 20 L90 -20 M130 70 L170 50 M50 70 L10 50 M90 150 L90 190" stroke="#818cf8" stroke-width="2" opacity="0.6"/>
+  </g>
+
+  <!-- Content text -->
+  <rect x="35" y="45" width="110" height="32" rx="6" fill="#ef4444"/>
+  <text x="90" y="67" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="14" fill="#fff" text-anchor="middle">NEW IN AI</text>
+
+  <text x="35" y="130" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="44" fill="#ffffff">TOP 10 AI</text>
+  <text x="35" y="180" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="46" fill="url(#cyanGrad)">TOOLS</text>
+  <text x="35" y="226" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="24" fill="#94a3b8">EVERYONE MUST TRY</text>
+
+  <!-- Tag badge -->
+  <rect x="35" y="260" width="180" height="34" rx="17" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="125" y="282" font-family="sans-serif" font-weight="bold" font-size="13" fill="#38bdf8" text-anchor="middle">⚡ 10X PRODUCTIVITY</text>
+
+  <!-- Duration Badge -->
+  <rect x="560" y="320" width="65" height="26" rx="4" fill="#000000" opacity="0.85"/>
+  <text x="592" y="338" font-family="sans-serif" font-weight="bold" font-size="13" fill="#ffffff" text-anchor="middle">18:42</text>
+</svg>

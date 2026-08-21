@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <linearGradient id="neonOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg4)"/>
+  
+  <!-- Speed lines -->
+  <line x1="0" y1="280" x2="640" y2="280" stroke="#f97316" stroke-width="2" opacity="0.4"/>
+  <line x1="0" y1="310" x2="640" y2="310" stroke="#f97316" stroke-width="4" opacity="0.8"/>
+  <line x1="0" y1="330" x2="640" y2="330" stroke="#e11d48" stroke-width="2" opacity="0.3"/>
+
+  <!-- Supercar Outline Graphic -->
+  <path d="M 280 260 L 320 220 L 440 210 L 520 240 L 590 250 L 610 270 L 250 270 Z" fill="#27272a" stroke="#f97316" stroke-width="3"/>
+  <circle cx="340" cy="270" r="22" fill="#09090b" stroke="#f97316" stroke-width="4"/>
+  <circle cx="530" cy="270" r="22" fill="#09090b" stroke="#f97316" stroke-width="4"/>
+  <polygon points="400,218 470,218 450,238 380,238" fill="#38bdf8" opacity="0.7"/>
+
+  <!-- Badge -->
+  <rect x="35" y="40" width="130" height="32" rx="6" fill="#f97316"/>
+  <text x="100" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="14" fill="#000" text-anchor="middle">GAME DEV</text>
+
+  <text x="35" y="125" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="40" fill="#ffffff">UNREAL ENGINE 5.4</text>
+  <text x="35" y="175" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="44" fill="url(#neonOrange)">HYPER REALISTIC</text>
+  <text x="35" y="215" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="22" fill="#a1a1aa">Next-Gen Vehicle Physics</text>
+
+  <rect x="560" y="320" width="65" height="26" rx="4" fill="#000000" opacity="0.85"/>
+  <text x="592" y="338" font-family="sans-serif" font-weight="bold" font-size="13" fill="#ffffff" text-anchor="middle">24:18</text>
+</svg>

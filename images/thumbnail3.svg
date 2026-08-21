@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="lofiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4c1d95"/>
+      <stop offset="50%" stop-color="#831843"/>
+      <stop offset="100%" stop-color="#fdba74"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#lofiGrad)"/>
+  
+  <!-- Big Sun -->
+  <circle cx="320" cy="220" r="110" fill="#fef08a" opacity="0.9"/>
+  
+  <!-- Distant Mountains -->
+  <polygon points="-50,360 180,210 380,360" fill="#2e1065" opacity="0.8"/>
+  <polygon points="260,360 480,230 700,360" fill="#3b0764" opacity="0.9"/>
+
+  <!-- City Silhouette / Room Window -->
+  <rect x="0" y="320" width="640" height="40" fill="#18181b"/>
+  
+  <!-- Glowing Text -->
+  <rect x="40" y="40" width="130" height="32" rx="6" fill="#18181b" opacity="0.8"/>
+  <text x="105" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="14" fill="#f43f5e" text-anchor="middle">🔴 LIVE 24/7</text>
+
+  <text x="40" y="130" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="44" fill="#ffffff">LOFI HIP HOP</text>
+  <text x="40" y="175" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="32" fill="#fed7aa">CHILL BEATS</text>
+  <text x="40" y="210" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="20" fill="#ffffff" opacity="0.9">Beats to Relax / Study to 🎧</text>
+
+  <!-- Duration Badge (LIVE) -->
+  <rect x="575" y="320" width="50" height="26" rx="4" fill="#dc2626"/>
+  <text x="600" y="338" font-family="sans-serif" font-weight="bold" font-size="12" fill="#ffffff" text-anchor="middle">LIVE</text>
+</svg>

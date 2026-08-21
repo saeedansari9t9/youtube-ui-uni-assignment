@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 28" width="120" height="28">
+  <!-- YouTube Play Button Icon -->
+  <path d="M27.972 3.123C27.043 2 25.433 1.5 20.5 1.5H7.5C2.567 1.5 0.957 2 0.028 3.123 -0.016 3.176 0 4.5 0 14s-0.016 10.824 0.028 10.877C0.957 26 2.567 26.5 7.5 26.5h13c4.933 0 6.543-0.5 7.472-1.623 0.044-0.053 0.028-1.377 0.028-10.877s0.016-10.824-0.028-10.877z" fill="#FF0000"/>
+  <polygon points="11,8.5 19,14 11,19.5" fill="#FFFFFF"/>
+  
+  <!-- "YouTube" Text -->
+  <text x="34" y="19" font-family="'YouTube Sans', 'Roboto', 'Arial', sans-serif" font-weight="bold" font-size="17" fill="#0F0F0F" letter-spacing="-0.5">YouTube</text>
+  <text x="100" y="10" font-family="'Roboto', sans-serif" font-size="9" font-weight="500" fill="#606060">PK</text>
+</svg>

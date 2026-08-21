@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube - Lab Task</title>
+  <!-- Google Fonts: Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Link external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER (TOP NAVIGATION BAR) ==================== -->
+  <header class="header">
+    <!-- Left Section: Menu Toggle & YouTube Logo -->
+    <div class="header-left">
+      <button class="icon-btn menu-btn" aria-label="Open menu" title="Guide">
+        <svg viewBox="0 0 24 24" class="header-icon" fill="currentColor">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+      </button>
+      <a href="#" class="logo-link" title="YouTube Home">
+        <img src="images/youtube-logo.svg" alt="YouTube Logo" class="logo-img">
+      </a>
+    </div>
+
+    <!-- Center Section: Search Bar & Voice Search -->
+    <div class="header-center">
+      <form class="search-form" action="#" method="get" onsubmit="event.preventDefault();">
+        <div class="search-input-wrapper">
+          <input type="text" class="search-input" placeholder="Search" aria-label="Search">
+        </div>
+        <button type="submit" class="search-btn" title="Search" aria-label="Search">
+          <svg viewBox="0 0 24 24" class="search-icon" fill="currentColor">
+            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+        </button>
+      </form>
+      <button class="icon-btn voice-btn" title="Search with your voice" aria-label="Search with voice">
+        <svg viewBox="0 0 24 24" class="header-icon" fill="currentColor">
+          <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Right Section: Create, Notifications & User Profile -->
+    <div class="header-right">
+      <button class="icon-btn" title="Create" aria-label="Create">
+        <svg viewBox="0 0 24 24" class="header-icon" fill="currentColor">
+          <path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-4.5l4 3.5V6l-4 3.5V6z"/>
+        </svg>
+      </button>
+      <button class="icon-btn" title="Notifications" aria-label="Notifications">
+        <svg viewBox="0 0 24 24" class="header-icon" fill="currentColor">
+          <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+        </svg>
+      </button>
+      <a href="#" class="profile-link" title="User Profile">
+        <img src="images/profile.svg" alt="User Profile Icon" class="profile-img">
+      </a>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN WRAPPER (SIDEBAR + CONTENT) ==================== -->
+  <div class="main-container">
+
+    <!-- ==================== SIDEBAR MENU ==================== -->
+    <nav class="sidebar" aria-label="Main Navigation">
+      <ul class="nav-list">
+        <li class="nav-item active">
+          <a href="#" class="nav-link">
+            <svg viewBox="0 0 24 24" class="nav-icon" fill="currentColor">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+            <span class="nav-text">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg viewBox="0 0 24 24" class="nav-icon" fill="currentColor">
+              <path d="M17.77 10.32l-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07 1 1.83 3.27 2.53 5.09 1.56L18 17.06c1.27-.65 2.06-1.99 2.01-3.43-.05-1.44-.9-2.71-2.24-3.31zM10 14.5v-5l4.5 2.5-4.5 2.5z"/>
+            </svg>
+            <span class="nav-text">Shorts</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg viewBox="0 0 24 24" class="nav-icon" fill="currentColor">
+              <path d="M20 8H4V6h16v2zm-2-6H6v2h12V2zm4 10v8c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2zm-6 4l-6-3.27v6.53L16 16z"/>
+            </svg>
+            <span class="nav-text">Subscriptions</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg viewBox="0 0 24 24" class="nav-icon" fill="currentColor">
+              <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/>
+            </svg>
+            <span class="nav-text">Library</span>
+          </a>
+        </li>
+      </ul>
+
+      <hr class="sidebar-divider">
+
+      <!-- Additional Realistic Sidebar Links -->
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg viewBox="0 0 24 24" class="nav-icon" fill="currentColor">
+              <path d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0 0 13 21a9 9 0 0 0 0-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/>
+            </svg>
+            <span class="nav-text">History</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg viewBox="0 0 24 24" class="nav-icon" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
+            </svg>
+            <span class="nav-text">Your Videos</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg viewBox="0 0 24 24" class="nav-icon" fill="currentColor">
+              <path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm.83 12.5h-1.66v-5h1.66v5zm0-6.67h-1.66V7.83h1.66v1.67z"/>
+            </svg>
+            <span class="nav-text">Watch Later</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ==================== CONTENT SECTION ==================== -->
+    <main class="content-area">
+      
+      <!-- Category Filter Chips -->
+      <section class="chips-container" aria-label="Video Topics">
+        <button class="chip active">All</button>
+        <button class="chip">Web Development</button>
+        <button class="chip">Artificial Intelligence</button>
+        <button class="chip">Music</button>
+        <button class="chip">Gaming</button>
+        <button class="chip">Science</button>
+        <button class="chip">Cooking</button>
+        <button class="chip">Travel</button>
+        <button class="chip">Podcasts</button>
+        <button class="chip">Recently Uploaded</button>
+      </section>
+
+      <!-- ==================== VIDEO GRID SECTION ==================== -->
+      <section class="video-grid" aria-label="Recommended Videos">
+        
+        <!-- Video Card 1 -->
+        <article class="video-card">
+          <div class="thumbnail-wrapper">
+            <img src="images/thumbnail1.svg" alt="Full-Stack Web Development Bootcamp Thumbnail" class="thumbnail-img" loading="lazy">
+          </div>
+          <div class="video-details">
+            <img src="images/avatar1.svg" alt="Code With Me Avatar" class="channel-avatar">
+            <div class="video-info">
+              <h3 class="video-title" title="Complete Web Development Bootcamp 2026 | HTML, CSS, JavaScript &amp; Node">
+                Complete Web Development Bootcamp 2026 | HTML, CSS, JavaScript &amp; Node
+              </h3>
+              <p class="channel-name">
+                Code With Me
+                <svg class="verified-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </p>
+              <p class="video-metadata">
+                <span class="views">1.4M views</span> • <span class="upload-time">2 days ago</span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video Card 2 -->
+        <article class="video-card">
+          <div class="thumbnail-wrapper">
+            <img src="images/thumbnail2.svg" alt="Top 10 AI Tools in 2026 Thumbnail" class="thumbnail-img" loading="lazy">
+          </div>
+          <div class="video-details">
+            <img src="images/avatar2.svg" alt="AI Revolution Avatar" class="channel-avatar">
+            <div class="video-info">
+              <h3 class="video-title" title="Top 10 AI Tools That Will Blow Your Mind in 2026 (Free &amp; Paid)">
+                Top 10 AI Tools That Will Blow Your Mind in 2026 (Free &amp; Paid)
+              </h3>
+              <p class="channel-name">
+                AI Revolution
+                <svg class="verified-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </p>
+              <p class="video-metadata">
+                <span class="views">890K views</span> • <span class="upload-time">1 week ago</span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video Card 3 -->
+        <article class="video-card">
+          <div class="thumbnail-wrapper">
+            <img src="images/thumbnail3.svg" alt="Lofi Hip Hop Chill Radio Thumbnail" class="thumbnail-img" loading="lazy">
+          </div>
+          <div class="video-details">
+            <img src="images/avatar3.svg" alt="Lofi Dreams Avatar" class="channel-avatar">
+            <div class="video-info">
+              <h3 class="video-title" title="Lofi Hip Hop Radio 📚 - Beats to Relax / Study / Code to [24/7 Live Stream]">
+                Lofi Hip Hop Radio 📚 - Beats to Relax / Study / Code to [24/7 Live Stream]
+              </h3>
+              <p class="channel-name">
+                Lofi Dreams
+                <svg class="verified-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </p>
+              <p class="video-metadata">
+                <span class="views">12K watching</span> • <span class="upload-time">Started streaming now</span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video Card 4 -->
+        <article class="video-card">
+          <div class="thumbnail-wrapper">
+            <img src="images/thumbnail4.svg" alt="Unreal Engine 5 Next-Gen Game Dev Thumbnail" class="thumbnail-img" loading="lazy">
+          </div>
+          <div class="video-details">
+            <img src="images/avatar4.svg" alt="Game Dev Studio Avatar" class="channel-avatar">
+            <div class="video-info">
+              <h3 class="video-title" title="I Built a Hyper Realistic Racing Game in Unreal Engine 5.4!">
+                I Built a Hyper Realistic Racing Game in Unreal Engine 5.4!
+              </h3>
+              <p class="channel-name">
+                Game Dev Studio
+              </p>
+              <p class="video-metadata">
+                <span class="views">520K views</span> • <span class="upload-time">4 days ago</span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video Card 5 -->
+        <article class="video-card">
+          <div class="thumbnail-wrapper">
+            <img src="images/thumbnail5.svg" alt="Black Holes Physics Documentary Thumbnail" class="thumbnail-img" loading="lazy">
+          </div>
+          <div class="video-details">
+            <img src="images/avatar5.svg" alt="Cosmos Insider Avatar" class="channel-avatar">
+            <div class="video-info">
+              <h3 class="video-title" title="What Really Happens Inside a Black Hole? (The Paradox Explained)">
+                What Really Happens Inside a Black Hole? (The Paradox Explained)
+              </h3>
+              <p class="channel-name">
+                Cosmos Insider
+                <svg class="verified-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </p>
+              <p class="video-metadata">
+                <span class="views">3.2M views</span> • <span class="upload-time">3 weeks ago</span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video Card 6 -->
+        <article class="video-card">
+          <div class="thumbnail-wrapper">
+            <img src="images/thumbnail6.svg" alt="Healthy Breakfast Recipes Thumbnail" class="thumbnail-img" loading="lazy">
+          </div>
+          <div class="video-details">
+            <img src="images/avatar6.svg" alt="Chef Gourmet Avatar" class="channel-avatar">
+            <div class="video-info">
+              <h3 class="video-title" title="5 Easy High-Protein Breakfast Ideas Under 10 Minutes">
+                5 Easy High-Protein Breakfast Ideas Under 10 Minutes
+              </h3>
+              <p class="channel-name">
+                Chef Gourmet
+              </p>
+              <p class="video-metadata">
+                <span class="views">410K views</span> • <span class="upload-time">5 days ago</span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video Card 7 -->
+        <article class="video-card">
+          <div class="thumbnail-wrapper">
+            <img src="images/thumbnail7.svg" alt="Top Travel Destinations 2026 Thumbnail" class="thumbnail-img" loading="lazy">
+          </div>
+          <div class="video-details">
+            <img src="images/avatar7.svg" alt="Wanderlust Travels Avatar" class="channel-avatar">
+            <div class="video-info">
+              <h3 class="video-title" title="Top 10 Most Beautiful Travel Destinations to Visit in 2026">
+                Top 10 Most Beautiful Travel Destinations to Visit in 2026
+              </h3>
+              <p class="channel-name">
+                Wanderlust Travels
+                <svg class="verified-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </p>
+              <p class="video-metadata">
+                <span class="views">1.1M views</span> • <span class="upload-time">1 month ago</span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video Card 8 -->
+        <article class="video-card">
+          <div class="thumbnail-wrapper">
+            <img src="images/thumbnail8.svg" alt="Master JavaScript in 30 Days Thumbnail" class="thumbnail-img" loading="lazy">
+          </div>
+          <div class="video-details">
+            <img src="images/avatar8.svg" alt="JS Mastery Hub Avatar" class="channel-avatar">
+            <div class="video-info">
+              <h3 class="video-title" title="How to Master JavaScript in 30 Days (Complete Roadmap with Projects)">
+                How to Master JavaScript in 30 Days (Complete Roadmap with Projects)
+              </h3>
+              <p class="channel-name">
+                JS Mastery Hub
+                <svg class="verified-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </p>
+              <p class="video-metadata">
+                <span class="views">750K views</span> • <span class="upload-time">6 days ago</span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

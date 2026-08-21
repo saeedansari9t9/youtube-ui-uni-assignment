@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="travelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#travelGrad)"/>
+
+  <!-- Island / Tropical silhouette -->
+  <path d="M 0 290 Q 200 240 400 290 T 640 270 L 640 360 L 0 360 Z" fill="#0f766e"/>
+  <path d="M 380 280 Q 420 180 470 120 Q 490 200 500 280" stroke="#115e59" stroke-width="8" fill="none"/>
+  <!-- Palm leaves -->
+  <path d="M 470 120 Q 430 80 390 100" stroke="#134e4a" stroke-width="6" fill="none"/>
+  <path d="M 470 120 Q 520 80 550 110" stroke="#134e4a" stroke-width="6" fill="none"/>
+  <path d="M 470 120 Q 470 60 480 40" stroke="#134e4a" stroke-width="6" fill="none"/>
+
+  <rect x="35" y="40" width="130" height="32" rx="6" fill="#0f172a" opacity="0.8"/>
+  <text x="100" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="14" fill="#38bdf8" text-anchor="middle">TRAVEL GUIDE</text>
+
+  <text x="35" y="125" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="44" fill="#ffffff">TOP 10 PLACES</text>
+  <text x="35" y="175" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="44" fill="#fef08a">TO VISIT IN 2026</text>
+  <text x="35" y="215" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="22" fill="#ffffff">Budget Travel &amp; Hidden Gems 🌴</text>
+
+  <rect x="560" y="320" width="65" height="26" rx="4" fill="#000000" opacity="0.85"/>
+  <text x="592" y="338" font-family="sans-serif" font-weight="bold" font-size="13" fill="#ffffff" text-anchor="middle">21:40</text>
+</svg>
